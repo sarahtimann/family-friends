@@ -6,7 +6,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "placecats.com",
-        pathname: "/neo/**",
+        pathname: "/**",
       },
     ],
   },
