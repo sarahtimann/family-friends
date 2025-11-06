@@ -2,18 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import PetList from "./components/PetList";
 import NavBar from "./components/NavBar";
-import Card from "./components/Card";
 import Header from "./components/Header";
 import ScrollBar from "./components/ScrollBar";
 
 export default function Home() {
   return (
     <>
-      <main className="m-6">
-        <header className="mb-6 text-black">
+      <main className="bg-red-50">
+        <header className="mr-7 mb-6 ml-7 text-black">
           <Header />
         </header>
-        <div className="flex gap-4 overflow-x-auto">
+        <div className="flex gap-4 overflow-x-auto pl-7">
           <ScrollBar />
           <ScrollBar />
           <ScrollBar />
@@ -23,8 +22,7 @@ export default function Home() {
           <ScrollBar />
           <ScrollBar />
         </div>
-        <div className="grid grid-cols-2 place-items-center justify-items-stretch gap-6">
-          {/* <Card /> */}
+        <div className="mr-7 ml-7 grid grid-cols-2 place-items-center justify-items-stretch gap-6">
           <PetList />
           <PetList />
           <PetList />

@@ -6,7 +6,7 @@ import { FaRegStar } from "react-icons/fa";
 const PetList = () => {
   return (
     <Link href="/detalje">
-      <div className="rounded-2xl p-2 shadow-md">
+      <div className="rounded-2xl bg-white p-2 shadow-md hover:shadow-lg">
         <div className="grid">
           <Image
             loading="eager"
@@ -16,7 +16,7 @@ const PetList = () => {
             height={200}
             className="-mx-2 -mt-2 mb-2 w-[calc(100%+1rem)] max-w-none rounded-t-2xl"
           />
-          <FaRegStar className="z-10 m-2 -mt-35 mr-2 self-start justify-self-end rounded-full bg-gray-100/70 p-1 text-3xl text-white" />
+          <FaRegStar className="z-10 m-2 -mt-35 mr-2 self-start justify-self-end rounded-full bg-gray-100/70 p-1 text-3xl text-white transition-colors duration-200 hover:bg-red-300" />
         </div>
         <div className="mt-2 flex items-center justify-between">
           <div className="font-semibold tracking-wide">Kælenavn</div>

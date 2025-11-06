@@ -6,10 +6,10 @@ import { RxPerson } from "react-icons/rx";
 const NavBar = () => {
   return (
     <>
-      <GoHome className="text-3xl text-gray-400" />
-      <FaRegStar className="text-3xl text-gray-400" />
-      <FiMessageCircle className="text-3xl text-gray-400" />
-      <RxPerson className="text-3xl text-gray-400" />
+      <GoHome className="text-3xl text-gray-400 hover:text-red-300" />
+      <FaRegStar className="text-3xl text-gray-400 hover:text-red-300" />
+      <FiMessageCircle className="text-3xl text-gray-400 hover:text-red-300" />
+      <RxPerson className="text-3xl text-gray-400 hover:text-red-300" />
     </>
   );
 };
