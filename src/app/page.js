@@ -5,35 +5,39 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import ScrollBar from "./components/ScrollBar";
 
+import { FaRegStar } from "react-icons/fa";
+
 export default function Home() {
   return (
     <>
-      <main className="bg-red-50">
-        <header className="mr-7 mb-6 ml-7 text-black">
-          <Header />
-        </header>
-        <div className="flex gap-4 overflow-x-auto pl-7">
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-          <ScrollBar />
-        </div>
-        <div className="mr-7 ml-7 grid grid-cols-2 place-items-center justify-items-stretch gap-6">
-          <PetList />
-          <PetList />
-          <PetList />
-          <PetList />
-          <PetList />
-          <PetList />
-        </div>
-        <nav className="grid grid-cols-4 place-items-center pt-6">
-          <NavBar />
-        </nav>
-      </main>
+      <body className="m-10 max-w-[400px] bg-gray-800">
+        <main className="rounded-3xl bg-red-50 pt-4 pb-4">
+          <header className="mr-7 mb-6 ml-7 text-black">
+            <Header />
+          </header>
+          <div className="flex gap-4 overflow-x-auto pl-7">
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+            <ScrollBar />
+          </div>
+          <div className="mr-7 ml-7 grid grid-cols-2 place-items-center justify-items-stretch gap-6">
+            <PetList />
+            <PetList />
+            <PetList />
+            <PetList />
+            <PetList />
+            <PetList />
+          </div>
+          <nav className="grid grid-cols-4 place-items-center pt-6">
+            <NavBar />
+          </nav>
+        </main>
+      </body>
     </>
   );
 }
