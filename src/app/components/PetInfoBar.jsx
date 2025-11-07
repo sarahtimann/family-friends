@@ -1,6 +1,6 @@
 const PetInfoBar = () => {
   return (
-    <div className="flex gap-4">
+    <div className="mt-4 mb-4 flex gap-4">
       <p className="rounded-full bg-blue-200 px-4 py-2 text-green-800/70">
         Dog
       </p>
