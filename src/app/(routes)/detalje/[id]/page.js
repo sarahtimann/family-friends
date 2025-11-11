@@ -12,7 +12,7 @@ import AdoptBtn from "@/app/components/AdoptBtn";
 import { FaRegStar } from "react-icons/fa";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Suspense } from "react";
-import Loading from "@/app/components/Loading";
+// import Loading from "@/app/components/Loading";
 
 export default async function detalje({ params }) {
   const { id } = await params;
@@ -20,7 +20,7 @@ export default async function detalje({ params }) {
   const product = await response.json();
 
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<div>Loading...</div>}>
       <main className="rounded-3xl bg-red-50 pt-4 pr-4 pb-4 pl-4">
         <header className="mr-7 mb-6 ml-7 text-black">
           <Header />

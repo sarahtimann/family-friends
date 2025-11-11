@@ -1,5 +1,5 @@
 export default function Description({ product }) {
-  const description = product?.description || "No description available.";
+  const description = product.description ?? "No description available.";
 
   return (
     <div className="mt-4 mb-4">
