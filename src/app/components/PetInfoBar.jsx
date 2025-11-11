@@ -1,20 +1,16 @@
-const PetInfoBar = () => {
+export default function PetInfoBar({ product }) {
+  const tags = product?.tags || [];
+
   return (
     <div className="mt-4 mb-4 flex gap-4">
-      <p className="rounded-full bg-blue-200 px-4 py-2 text-green-800/70">
-        Dog
-      </p>
-      <p className="rounded-full bg-red-300 px-4 py-2 text-green-800/70">
-        Male
-      </p>
-      <p className="rounded-full bg-lime-300/70 px-4 py-2 text-green-800/70">
-        Young
-      </p>
-      <p className="rounded-full bg-yellow-200 px-4 py-2 text-yellow-800/70">
-        Great Dane
-      </p>
+      {tags.map((tag, index) => (
+        <p
+          key={index}
+          className="rounded-full bg-blue-200 px-4 py-2 text-green-800/70"
+        >
+          {tag.charAt(0).toUpperCase() + tag.slice(1)}
+        </p>
+      ))}
     </div>
   );
-};
-
-export default PetInfoBar;
+}

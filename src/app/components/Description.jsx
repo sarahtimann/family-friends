@@ -1,11 +1,9 @@
-const Description = () => {
-  return (
-    <p className="mb-2 leading-6 font-light text-gray-600">
-      Den venligste Samojed, vi nogensinde har mødt. Elsker at lege med bolde og
-      er venlig over for andre dyr. På trods af sin hvide pels elsker den regn
-      og vandpytter. 
-    </p>
-  );
-};
+export default function Description({ product }) {
+  const description = product?.description || "No description available.";
 
-export default Description;
+  return (
+    <div className="mt-4 mb-4">
+      <p className="leading-6 font-light text-gray-600">{description}</p>
+    </div>
+  );
+}
