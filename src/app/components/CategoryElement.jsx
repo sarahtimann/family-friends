@@ -21,7 +21,8 @@ export default CategoryElement;
 //     key={category}
 //     className="mb-8 flex items-center gap-3 rounded-full border-[1.5px] border-gray-300 px-4 py-2 text-gray-400 transition-colors duration-200 hover:border-red-300 hover:bg-red-300 hover:text-white"
 //   >
-// linjen herunder er styling til hvis der skal billede med
+
+// linjerne herunder er styling til hvis der skal billede med
 
 //     <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full"></div>
 //     <span></span>

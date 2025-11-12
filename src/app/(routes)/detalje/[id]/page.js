@@ -40,7 +40,7 @@ export default async function detalje({ params }) {
             src={product.images[0]}
             width={300}
             height={200}
-            className="col-1 row-1 w-[calc(100%+1rem)] rounded-2xl"
+            className="col-1 row-1 w-[calc(100%+1rem)] rounded-2xl bg-yellow-200"
           />
         </div>
         <h1 className="mt-4 text-2xl font-bold">{product.title}</h1>

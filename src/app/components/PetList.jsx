@@ -32,7 +32,7 @@ const FetchProduct = async () => {
             src={product.thumbnail}
             width={300}
             height={200}
-            className="-mx-2 -mt-2 mb-2 w-[calc(100%+1rem)] max-w-none rounded-t-2xl"
+            className="-mx-2 -mt-2 mb-2 w-[calc(100%+1rem)] max-w-none rounded-t-2xl bg-blue-200"
           />
           <FaRegStar className="absolute top-0 right-0 z-10 self-start justify-self-end rounded-full bg-gray-100/70 p-1 text-3xl text-white transition-colors duration-200 hover:bg-red-300" />
         </div>

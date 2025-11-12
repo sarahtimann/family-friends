@@ -5,7 +5,7 @@ import CategoryElement from "./CategoryElement";
 
 const ScrollBar = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense>
       <FetchCategories />
     </Suspense>
   );

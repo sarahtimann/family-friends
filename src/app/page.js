@@ -33,3 +33,8 @@ export default async function Home() {
     </>
   );
 }
+
+async function ProductListContainer({ searchParams }) {
+  const category = await searchParams;
+  console.log(category);
+}
