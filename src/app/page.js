@@ -13,8 +13,8 @@ export default async function Home() {
   const product = await response.json();
 
   return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
+      <>
         <main className="rounded-3xl bg-red-50 pt-4 pb-4">
           <header className="mr-7 mb-6 ml-7 text-black">
             <Header />
@@ -29,8 +29,8 @@ export default async function Home() {
             <NavBar />
           </nav>
         </main>
-      </Suspense>
-    </>
+      </>
+    </Suspense>
   );
 }
 
